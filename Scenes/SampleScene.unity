@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29173623}
   - component: {fileID: 29173624}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 33771164}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fifth platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125447197}
   - component: {fileID: 125447198}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -521,7 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 148584082}
   - component: {fileID: 148584083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -608,7 +608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210109352}
   - component: {fileID: 210109353}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,6 +685,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &351801094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 351801095}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &351801095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351801094}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.58, y: -0.058, z: 0}
+  m_LocalScale: {x: 1.2050998, y: 1.2050998, z: 1.2050998}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &445134052
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,7 +726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 445134053}
   - component: {fileID: 445134054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,7 +892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469832891}
   - component: {fileID: 469832892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491150600}
   - component: {fileID: 491150601}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497509556}
   - component: {fileID: 497509557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1206,7 +1237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572056162}
   - component: {fileID: 572056163}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1312,6 +1343,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1110235712}
+  - {fileID: 1568815690}
   - {fileID: 1687861409}
   - {fileID: 1996713082}
   - {fileID: 814752449}
@@ -1336,7 +1369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610750412}
   - component: {fileID: 610750413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1502,7 +1535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 831886112}
   - component: {fileID: 831886113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1589,7 +1622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884058382}
   - component: {fileID: 884058383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1668,7 +1701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 916902410}
   - component: {fileID: 916902411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1834,7 +1867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 970109962}
   - component: {fileID: 970109963}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1988,7 +2021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030500196}
   - component: {fileID: 1030500197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2162,7 +2195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1057526773}
   - component: {fileID: 1057526774}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2311,12 +2344,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110235710}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.16, y: -0.84, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.983371, y: -1.2, z: -0}
   m_LocalScale: {x: 3.4433866, y: 3.4433866, z: 3.4433866}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 597501975}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1134293118
 GameObject:
@@ -2328,7 +2361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1134293119}
   - component: {fileID: 1134293120}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2415,7 +2448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1161635244}
   - component: {fileID: 1161635245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2501,7 +2534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1175540771}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: second platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2537,7 +2570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1195327078}
   - component: {fileID: 1195327079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2624,7 +2657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1198222760}
   - component: {fileID: 1198222761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2711,7 +2744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210931828}
   - component: {fileID: 1210931829}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2790,7 +2823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1296506492}
   - component: {fileID: 1296506493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2870,7 +2903,7 @@ GameObject:
   - component: {fileID: 1328884433}
   - component: {fileID: 1328884432}
   - component: {fileID: 1328884431}
-  - component: {fileID: 1328884430}
+  - component: {fileID: 1328884436}
   - component: {fileID: 1328884435}
   - component: {fileID: 1328884434}
   m_Layer: 0
@@ -2880,19 +2913,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1328884430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328884429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffccc2b89bf219547ac834f9c03fcbde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!114 &1328884431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2906,7 +2926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: a3b6d8e344c7233448193e37ab28ea8c, type: 3}
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -2922,6 +2942,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 6cd2a125-d752-4550-905d-3f94e479e441
     m_ActionName: 'Player/Move[/Keyboard/space,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 02c36c10-2a39-49c4-8e36-20ab71b5053c
+    m_ActionName: 'Player/Jump[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -3058,7 +3082,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3070,6 +3094,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1328884436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328884429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffccc2b89bf219547ac834f9c03fcbde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4.5
+  jumpForce: 10
+  groundCheck: {fileID: 351801095}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1417999778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,7 +3123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1417999779}
   - component: {fileID: 1417999780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3253,7 +3296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1486242365}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: first platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3288,7 +3331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501001004}
   - component: {fileID: 1501001005}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3619,12 +3662,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568815688}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6, y: 0.89, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2233696, y: 0.53, z: -0}
   m_LocalScale: {x: 4.5921, y: 4.5921, z: 4.5921}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 597501975}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1599129487
 GameObject:
@@ -3636,7 +3679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599129488}
   - component: {fileID: 1599129489}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3715,7 +3758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1614095980}
   - component: {fileID: 1614095981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4005,7 +4048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1735238654}
   - component: {fileID: 1735238655}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4083,7 +4126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1798696501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: third platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4117,7 +4160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1803771864}
   - component: {fileID: 1803771865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4196,7 +4239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1822045040}
   - component: {fileID: 1822045041}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4299,7 +4342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 205.02002, y: -95.985}
+  m_AnchoredPosition: {x: 205.02002, y: -95.98497}
   m_SizeDelta: {x: -410.04, y: -191.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1831134568
@@ -4437,7 +4480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1954122285}
   - component: {fileID: 1954122286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4602,7 +4645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994365190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fourth platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4724,7 +4767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2007905316}
   - component: {fileID: 2007905317}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4835,7 +4878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -234.63, y: -109.86}
+  m_AnchoredPosition: {x: -234.63, y: -109.85997}
   m_SizeDelta: {x: -469.26, y: -219.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2042800588
@@ -4886,7 +4929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2134662918}
   - component: {fileID: 2134662919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4964,5 +5007,4 @@ SceneRoots:
   - {fileID: 962455913}
   - {fileID: 1328884433}
   - {fileID: 1687393724}
-  - {fileID: 1568815690}
-  - {fileID: 1110235712}
+  - {fileID: 351801095}
