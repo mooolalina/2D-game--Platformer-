@@ -1,8 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    // Ссылки на UI-сердечки
+    [SerializeField] private Image[] hearts;
+    [SerializeField] private Sprite fullHeart;
+    [SerializeField] private Sprite emptyHeart;
     private Vector2 moveInput;
 
     [SerializeField] private float speed = 2f; // скорость персонажа
@@ -23,7 +28,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        currentLives = maxLives; 
+        currentLives = maxLives;
     }
 
     private void OnEnable()
@@ -113,7 +118,11 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentLives -= damage;
-        Debug.Log($"Player took damage! Lives left: {currentLives}");
+        if (currentLives < 0) currentLives = 0;
+
+        Debug.Log($"О нет, вы ранены! Жизней осталось: {currentLives}");
+
+        UpdateHeartsUI();
 
         if (currentLives <= 0)
         {
@@ -123,8 +132,20 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player died!");
+        Debug.Log("Вы погибли!");
         // Тут потом добавить код на перезапуск уровня сначала или чтобы в меню выбрасывало
         enabled = false;
     }
+    
+    private void UpdateHeartsUI()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < currentLives)
+                hearts[i].sprite = fullHeart;
+            else
+                hearts[i].sprite = emptyHeart;
+        }
+    }
+
 }
