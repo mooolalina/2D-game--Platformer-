@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
 
+    [SerializeField] private int maxLives = 3; // кол-во жизней перса
+    private int currentLives;
+
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool wasGrounded;
@@ -20,6 +23,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        currentLives = maxLives; 
     }
 
     private void OnEnable()
@@ -93,7 +97,7 @@ public class Player : MonoBehaviour
         if (isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            animator.SetInteger("state", 2); 
+            animator.SetInteger("state", 2);
         }
     }
 
@@ -104,5 +108,23 @@ public class Player : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentLives -= damage;
+        Debug.Log($"Player took damage! Lives left: {currentLives}");
+
+        if (currentLives <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Debug.Log("Player died!");
+        // Тут потом добавить код на перезапуск уровня сначала или чтобы в меню выбрасывало
+        enabled = false;
     }
 }

@@ -1451,6 +1451,7 @@ GameObject:
   - component: {fileID: 700164774}
   - component: {fileID: 700164773}
   - component: {fileID: 700164772}
+  - component: {fileID: 700164776}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1558,11 +1559,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700164770}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -1623,6 +1624,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.24888521, y: 0.38397765}
   m_EdgeRadius: 0
+--- !u!114 &700164776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700164770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711aac6e7eb8a88449288725aa538cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
 --- !u!1 &814752448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,6 +3313,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  maxLives: 3
 --- !u!95 &1328884437
 Animator:
   serializedVersion: 7
@@ -3871,7 +3886,7 @@ Transform:
   m_GameObject: {fileID: 1568815688}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2233696, y: 0.53, z: 0.001485459}
+  m_LocalPosition: {x: 1.2233696, y: 0.5, z: 0.001485459}
   m_LocalScale: {x: 4.5921, y: 4.5921, z: 4.5921}
   m_ConstrainProportionsScale: 0
   m_Children: []
