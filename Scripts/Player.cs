@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     [SerializeField] private int maxLives = 3; // кол-во жизней перса
+    [SerializeField] private Transform attackPoint; // точка атаки (например, перед персонажем)
+    [SerializeField] private float attackRange = 0.5f;
+    [SerializeField] private LayerMask enemyLayers; // слой врагов
+    [SerializeField] private int attackDamage = 1;
     private int currentLives;
 
     private Rigidbody2D rb;
@@ -39,6 +43,7 @@ public class Player : MonoBehaviour
             playerInput.actions["Move"].performed += OnMove;
             playerInput.actions["Move"].canceled += OnMove;
             playerInput.actions["Jump"].performed += OnJump;
+            playerInput.actions["Attack"].performed += OnAttack;
         }
     }
 
@@ -50,6 +55,7 @@ public class Player : MonoBehaviour
             playerInput.actions["Move"].performed -= OnMove;
             playerInput.actions["Move"].canceled -= OnMove;
             playerInput.actions["Jump"].performed -= OnJump;
+            playerInput.actions["Attack"].performed -= OnAttack;
         }
     }
 
@@ -105,6 +111,29 @@ public class Player : MonoBehaviour
             animator.SetInteger("state", 2);
         }
     }
+
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        Attack();
+    }
+
+    private void Attack()
+    {
+        Debug.Log("Атака!");
+        animator.SetTrigger("Attack");
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            MushroomEnemy enemyScript = enemy.GetComponent<MushroomEnemy>();
+            if (enemyScript != null)
+            {
+                enemyScript.TakeDamage(attackDamage);
+            }
+        }
+    }
+
 
     private void OnDrawGizmos()
     {
