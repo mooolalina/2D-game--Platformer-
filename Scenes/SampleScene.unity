@@ -1639,7 +1639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711aac6e7eb8a88449288725aa538cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  damageAmount: 1
+  health: 3
 --- !u!1 &730542461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3359,7 +3360,7 @@ MonoBehaviour:
   attackRange: 0.5
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   attackDamage: 1
 --- !u!95 &1328884437
 Animator:

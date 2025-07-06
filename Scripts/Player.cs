@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    // Ссылки на UI-сердечки
     [SerializeField] private Image[] hearts;
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite emptyHeart;
@@ -17,9 +16,9 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     [SerializeField] private int maxLives = 3; // кол-во жизней перса
-    [SerializeField] private Transform attackPoint; // точка атаки (например, перед персонажем)
+    [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackRange = 0.5f;
-    [SerializeField] private LayerMask enemyLayers; // слой врагов
+    [SerializeField] private LayerMask enemyLayers; 
     [SerializeField] private int attackDamage = 1;
     private int currentLives;
 
@@ -131,6 +130,15 @@ public class Player : MonoBehaviour
             {
                 enemyScript.TakeDamage(attackDamage);
             }
+        }
+    }
+
+    void AttackEnemy(GameObject enemyObject)
+    {
+        MushroomEnemy enemy = enemyObject.GetComponent<MushroomEnemy>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(1);
         }
     }
 
