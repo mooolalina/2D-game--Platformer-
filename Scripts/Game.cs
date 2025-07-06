@@ -3,6 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
+    public void LoadLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void Menu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
+    }
+
     public void RestartCurrentLevel()
     {
         Time.timeScale = 1f;
