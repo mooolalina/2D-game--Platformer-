@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private Image[] hearts;
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite emptyHeart;
+    [SerializeField] private GameObject restartButton;
     private Vector2 moveInput;
 
     [SerializeField] private float speed = 2f; // скорость персонажа
@@ -170,8 +172,15 @@ public class Player : MonoBehaviour
     private void Die()
     {
         Debug.Log("Вы погибли!");
-        // Тут потом добавить код на перезапуск уровня сначала или чтобы в меню выбрасывало
+        restartButton.SetActive(true);
+        Time.timeScale = 0f;
         enabled = false;
+    }
+
+    public void RestartLevel()
+    {
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
     private void UpdateHeartsUI()
